@@ -32,7 +32,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('shubhjadh1996@gmail.com','nokia300')
+    server.login('YouremailId','yourpassword')
 
     subject='price fell down'
 
@@ -40,7 +40,7 @@ def send_mail():
 
     msg=f"Subject:{subject}\n\n{body}"
 
-    server.sendmail('shubhjadh1996@gmail.com','shubhamjadhav190@gmail.com',msg)
+    server.sendmail('youremailid','toEmailIdYouWantToSend',msg)
     print('Hey email has been sent')
 
 
